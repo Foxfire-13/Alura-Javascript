@@ -1,9 +1,16 @@
+var valorEmDolar = document.getElementById('valor');
+
 function Converter() {
-	/*"getElementById" retorna o objeto do html
+	/*"document" é usado em praticamente todos os comandos relacionados com html
+	"getElementById" retorna o objeto do html
 	Para ter o valor da entrada usar ".value" depois da variavel*/
 
-	var valor = document.getElementById('valor');
-	var valorSimplificado = parseFloat(valor.value);
+	valorEmDolar = parseFloat(valor.value);
+	var valorEmReal = valorEmDolar * 5;
 
-	console.log(valorSimplificado);
+	var valorConvertido = document.getElementById('valorConvertido');
+
+	valorConvertido.innerHTML = 'O valor em Real é R$ ' + valorEmReal;
+
+	console.log(valorEmReal);
 }
