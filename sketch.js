@@ -10,7 +10,9 @@ function Converter() {
 
 	var valorConvertido = document.getElementById('valorConvertido');
 
-	valorConvertido.innerHTML = 'O valor em Real é R$ ' + valorEmReal;
+	valorConvertido.innerHTML = 'é R$ ' + valorEmReal;
 
 	console.log(valorEmReal);
 }
+
+//converter de dolar para euro

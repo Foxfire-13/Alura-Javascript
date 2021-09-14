@@ -14,14 +14,25 @@
 			  Descubra os valores em dolar U$
 			</p>
 			<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
-			<label for="moeda">Insira o valor</label><br>
+			<label for="moeda">Insira o valor em</label>
+			<select name="moeda" id="moeda1">
+				<option value="dolar">Dólar</option>
+				<option value="euro">Euro</option>
+				<option value="real">Real</option>
+			</select><br>
 			<input type="number" id="valor" size="2" /><br>
 			<!--A propriedade "onclick" pode retornar uma função depois do = 
 				e sempre entre aspas duplas
 			 no "type" posso dizer o tipo de entrada que aparece.
 			-->
-			<button type="submit" onclick="Converter()">Converter</button>
-			<h1 id="valorConvertido"></h1>
+			<button type="submit" onclick="Converter()">Converter</button><br><br>
+			<label for="moeda">O valor em</label>
+			<select name="moeda" id="moeda1">
+				<option value="dolar">Dólar</option>
+				<option value="euro">Euro</option>
+				<option value="real">Real</option>
+			</select>
+			<label for="moeda" id="valorConvertido">é </label>
 		  </div>
 		  <a href="https://alura.com.br/" target="_blank">
 			<img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
