@@ -1,41 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt">
 	<head>
-		<title>Imersão Dev Alura Javascript</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Imersão Dev - Aula 03</title>
 	</head>
+
 	<body>
 		<div class="container">
-			<h1 class="page-title">
-			  Conversor de moedas
-			</h1>
-			<p class="page-subtitle">
-			  Descubra os valores em dolar U$
-			</p>
-			<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
-			<label for="moeda">Insira o valor em</label>
-			<select name="moeda" id="moeda1">
-				<option value="dolar">Dólar</option>
-				<option value="euro">Euro</option>
-				<option value="real">Real</option>
-			</select><br>
-			<input type="number" id="valor" size="2" /><br>
-			<!--A propriedade "onclick" pode retornar uma função depois do = 
-				e sempre entre aspas duplas
-			 no "type" posso dizer o tipo de entrada que aparece.
-			-->
-			<button type="submit" onclick="Converter()">Converter</button><br><br>
-			<label for="moeda">O valor em</label>
-			<select name="moeda" id="moeda2">
-				<option value="dolar">Dólar</option>
-				<option value="euro">Euro</option>
-				<option value="real">Real</option>
-			</select>
-			<label for="moeda" id="valorConvertido">é </label>
-		  </div>
-		  <a href="https://alura.com.br/" target="_blank">
-			<img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+			<h1 class="page-title">Mentalista</h1>
+			<img
+				src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg"
+				class="page-logo"
+				alt=""
+			/><br />
+			<p class="page-subtitle">Digite um número de 0 a 10</p>
+			<input type="number" id="valor" /><br />
+			<button type="submit" onclick="Chutar()">Chutar</button>
+			<h2 class="resultado" id="resultado"></h2>
+		</div>
+		<a href="https://alura.com.br/" target="_blank">
+			<img
+				src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
+				alt=""
+				class="alura-logo"
+			/>
+		</a>
+		<script src="app.js"></script>
 		<script src="sketch.js"></script>
 	</body>
 </html>
