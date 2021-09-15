@@ -54,6 +54,11 @@ button {
 	background: #ffffff;
 }
 
+label {
+	color: white;
+	border-radius: 10px;
+}
+
 .resultado {
 	color: #ffffff;
 	text-align: center;
