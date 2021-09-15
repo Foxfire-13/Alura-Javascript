@@ -1,16 +1,24 @@
-var numeroSecreto = 3;
+var numeroSecreto = parseInt(Math.random() * 11);
+
+var tentativas = 4;
 
 function Chutar() {
 	var chute = parseInt(document.getElementById('valor').value);
-	console.log(chute);
+	var resultado = document.getElementById('resultado');
 
 	//Usar dois == para comparar valores, apenas um = para atribuir valores
 
 	if (chute == numeroSecreto) {
-		console.log('Acertou!');
+		resultado.innerHTML = 'Você acertou!';
 	} else if (chute > 10 || chute < 0) {
-		console.log('Você deve digitar um número de 0 a 10');
+		resultado.innerHTML = 'Você deve escrever um número entre 0 e 10';
 	} else {
-		console.log('Errou!');
+		resultado.innerHTML = 'Você errou! O número era ' + numeroSecreto;
 	}
 }
+
+/*
+-Colocar tentativas;
+-Mostrar se é maior ou menor
+-Colocar modo fácil, médio, díficil, hardcore
+*/
